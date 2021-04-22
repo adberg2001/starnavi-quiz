@@ -1,0 +1,35 @@
+.App{
+  padding: 20px 0 0 20px;
+
+  .actions{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+
+    select{
+      height: 25px;
+    }
+
+    button{
+      height: 25px;
+      border: none;
+      background: #005cff;
+      padding: 0 10px;
+      border-radius: 3px;
+      color: #fff
+    }
+  }
+
+  .table{
+    width: min-content;
+    display: grid;
+    grid-gap: 3px;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+    margin: 20px 0 0;
+
+    .blocks{
+      background: #fff;
+      border: 1px solid #707070;
+    }
+  }
+}
