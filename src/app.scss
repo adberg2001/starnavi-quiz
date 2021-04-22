@@ -20,16 +20,41 @@
     }
   }
 
-  .table{
-    width: min-content;
-    display: grid;
-    grid-gap: 3px;
-    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+  .body{
+    display: flex;
+    grid-gap: 30px;
     margin: 20px 0 0;
+    .table{
+      width: min-content;
+      height: min-content;
+      display: grid;
+      grid-gap: 3px;
+      grid-template: repeat(5, 1fr) / repeat(5, 1fr);
 
-    .blocks{
-      background: #fff;
-      border: 1px solid #707070;
+      .blocks{
+        background: #fff;
+        border: 1px solid #707070;
+      }
+    }
+
+    .window{
+      max-height: 300px;
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: 5px;
+      overflow-y: scroll;
+
+      .el{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        border: 1px solid #ffecc1;
+        background: rgba(255, 252, 248, 0.56);
+        color: #a5770a;
+      }
     }
   }
 }
